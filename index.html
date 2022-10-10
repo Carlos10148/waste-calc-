@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Justkillingsometime(calculator)</title>
+        <link rel ="stylesheet" href ="testing.css" >
+        
+
+
+        <style>
+
+    
+            /* we use dot (.) to target class and
+            hash (#) to target id... */
+            #particles-js {
+                width: 100%;
+                height: 100vh;
+                background-image: url(21.jpg);
+
+                
+            }
+    
+            .center-text {
+                position: absolute;
+                background-size: cover;
+                
+            }
+    
+          
+            
+        </style>
+    </head>
+
+
+    <body id ="the_body">
+        
+
+        <div id="particles-js">
+            <div class="center-text">
+                <h1 id ="header">
+                    Slovin's formula
+                </h1><br>
+                <div class ="myface">
+                    <div class="face">
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                    </div>
+                </div>
+                <br><p id ="p1">
+                    The formula provides the sample size (n) using the known population size (N) and the acceptable error value (e). Fill in the values for N and e in the formula n = N (1 + Ne 2). The resulting value of n equals the sample size to be used.Use our free sample size calculator to determine the required number of respondents for a survey. When Should You Apply Slovin's Formula? If a sample is drawn from a population, a formula must be used to account for margins of error and confidence intervals. When using statistical samples, it is possible to have a lot of knowledge about a population, only have some knowledge, or no knowledge at all. For instance, a population might have a bimodal distribution (as is frequently the case with class grades in mathematics classes), be normally distributed (for heights, weights, or IQs), or have no information about how it will behave (such as polling college students to get their opinions about quality of student life). When nothing is known about a population's behavior, use Slovin's formula.
+                </p><br>
+                <div id ="input">
+                    
+                    <label>Enter your error of margin(remove the % sign)</label>
+                    <input value =""  id ="moe" type ="number" placeholder="Enter here"><br>
+                    
+                    <label>Enter your population size</label>
+                    <input value =""   id ="ps" type ="number" placeholder="Enter here">
+                    <button class="btn" onclick="compute()">SEND</button>
+                    
+                    
+                    <p class = "answer1" value ="0" id ="answers">Answer: n = </p>    
+                    
+                    
+                    
+                </div>
+                
+
+                <br><br><p id ="p2">How Does the Slovin Formula Work? where n is the number of samples, N is the total population, and e is the tolerance for error.
+                    Determine the error of tolerance first before applying the formula. A tighter accuracy of a 98 percent confidence level (a margin of error of 0.02) may be required, or a confidence level of 95 percent (giving a margin of error of 0.05) may be sufficient. Fill in the formula with the population size and required error margin. The number of samples needed to assess the population is equal to the outcome.
+                </p>
+                <br><img src ="download.png"><br><br>
+                <div class="clock">
+                    <div class="hand hour"></div>
+                    <div class="hand minute"></div>
+                    <div class="hand second"></div>
+                </div>
+            </div>
+        </div>
+        <script src="testing.js"></script>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+    
+    </body>
+
+</html>
